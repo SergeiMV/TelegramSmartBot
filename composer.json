@@ -1,0 +1,22 @@
+{
+  "require": {
+    "guzzlehttp/guzzle": "*",
+    "xparse/element-finder": "*",
+    "xparse/recursive-pagination": "*",
+    "xparse/parser": "*",
+    "doctrine/orm": "^2.11.0",
+    "doctrine/dbal": "^3.2",
+    "symfony/yaml": "^5.4",
+    "symfony/cache": "^5.4",
+    "monolog/monolog": "*",
+    "bramus/monolog-colored-line-formatter": "*",
+    "megahertz/guzzle-tor": "*",
+    "longman/telegram-bot": "*",
+    "vlucas/phpdotenv": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "TelegramSmartBot": "src"
+    }
+  }
+}
