@@ -3,9 +3,10 @@
 
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
+use TelegramSmartBot\Tools\Database\DatabaseFactory;
 
-require __DIR__ . '/../bootstrap.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 ConsoleRunner::run(
-    new SingleManagerProvider($entityManager)
+    new SingleManagerProvider((new DatabaseFactory)->getEntityManager())
 );

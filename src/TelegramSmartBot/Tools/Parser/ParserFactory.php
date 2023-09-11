@@ -15,7 +15,7 @@ use Psr\Log\LoggerInterface;
 use Xparse\Parser\Parser;
 
 
-class ParserBuilder
+class ParserFactory
 {
     private HandlerStack $stack;
 

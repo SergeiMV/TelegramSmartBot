@@ -11,8 +11,8 @@
     "monolog/monolog": "*",
     "bramus/monolog-colored-line-formatter": "*",
     "megahertz/guzzle-tor": "*",
-    "longman/telegram-bot": "*",
-    "vlucas/phpdotenv": "*"
+    "vlucas/phpdotenv": "*",
+    "nutgram/nutgram": "^4.3"
   },
   "autoload": {
     "psr-0": {

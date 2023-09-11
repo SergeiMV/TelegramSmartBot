@@ -1,6 +1,7 @@
 <?php
 
 namespace TelegramSmartBot\Tools\Logger;
+
 use Bramus\Monolog\Formatter\ColoredLineFormatter;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\RotatingFileHandler;
@@ -11,10 +12,10 @@ use Psr\Log\LoggerInterface;
 require 'vendor/autoload.php';
 
 
-class LoggerBuilder
+class LoggerFactory
 {
 
-    private string $textFormat = "[%datetime%] [%channel%] %level_name%: %message%";
+    private string $textFormat = "[%channel%] [%level_name%] [%datetime%]: %message%";
 
     private string $dateFormat = "Y-m-d H:i:s";
 
